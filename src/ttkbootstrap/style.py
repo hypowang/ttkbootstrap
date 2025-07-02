@@ -5249,7 +5249,7 @@ class Bootstyle:
                 kwargs.update(style=ttkstyle)
 
             # update widget configuration
-            func(self, cnf, **kwargs)
+            return func(self, cnf, **kwargs)
 
         return configure
 
